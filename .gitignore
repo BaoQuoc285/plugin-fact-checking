@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs
+logs/
+*.log
+*.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Python virtual environment
+venv/
+
+# Model weights
+models/weights/
+
+# Test results
+*.pytest_cache/
+*.coverage
+
+# Fact-checking results
+factcheck_result.json

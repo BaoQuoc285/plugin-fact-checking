@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Settings</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 260px;
+      background-color: #fff;
+      border-right: 1px solid #e0e0e0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      color: #1976d2;
+      margin-bottom: 30px;
+      margin-left: 30px;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+      font-size: 15px;
+      color: #333;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .menu li:hover {
+      background-color: #f0f0f0;
+    }
+
+    .promo-box {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 14px;
+      background: #fdfdfd;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .promo-box button {
+      margin-top: 10px;
+      background-color: #1976d2;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    .main-content h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      color: #444;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #777;
+      margin-top: 6px;
+    }
+
+    .note a {
+      color: #1976d2;
+      text-decoration: none;
+    }
+
+    .note a:hover {
+      text-decoration: underline;
+    }
+
+    .button-group {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+    }
+
+    button {
+      padding: 10px 16px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background-color: #1259b2;
+    }
+
+    .success-message {
+      display: none;
+      color: green;
+      margin-top: 12px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>AI Settings</h2>
+      <ul class="menu">
+        <li>⚙️ General</li>
+        <li>📝 Customize Prompt</li>
+        <li>🎬 FactCheckAI</li>
+        <li>🌐 FactCheckImage</li>
+        <li>📩 Feedback</li>
+        <li>📄 Subscription</li>
+      </ul>
+      <div class="promo-box">
+        <div>
+          <strong>Get Unlimited Plan:</strong><br>
+          👍 Unlimited Tokens<br>
+          👍 GPT-4 Access<br>
+          👍 12+ Models<br>
+        </div>
+        <button>Upgrade Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h1>Connect to AI for FactChecking</h1>
+    <div class="form-group">
+      <label for="api-key">Gemini API Key:</label>
+      <input type="text" id="api-key" placeholder="Enter your Gemini API key">
+      <div class="note">
+        You can get an API key from <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a>.
+      </div>
+    </div>
+    <div class="button-group">
+      <button id="save-button">Save</button>
+      <button id="test-button">Test</button>
+    </div>
+    <p id="success-message" class="success-message">✅ Settings saved successfully!</p>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
