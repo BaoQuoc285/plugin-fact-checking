@@ -150,7 +150,7 @@ function showEvidence(evidences, label, claim) {
       box.style.display = box.style.display === "none" ? "block" : "none";
 
       try {
-        const apiKey = "AIzaSyDkNjMJpzL_gh-q1nT33GtL1DXbe6keJpc"; // 🔒 Thay bằng key thật
+        const apiKey = null; // 🔒 Đã thay bằng null để bảo mật
         suggestText.innerText = "⏳ Đang tạo gợi ý...";
         const suggestion = await getGeminiSuggest(claim, evidenceText, apiKey);
         suggestText.innerText = suggestion;

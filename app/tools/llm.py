@@ -25,7 +25,7 @@ class GeminiLLM(BaseLLM):
         return response.text.strip()
     
     
-def get_llm(provider: str ="GEMINI", model_name: str ="gemini-2.0-flash", api_key: str ="AIzaSyCe78RhtA-88OgTPRXDCBCR4gP3XwX6w-Y") -> BaseLLM:
+def get_llm(provider: str ="GEMINI", model_name: str ="gemini-2.0-flash", api_key: str =None) -> BaseLLM:
     provider = provider.lower()
     if provider == "gemini":
         return GeminiLLM(model_name, api_key)
