@@ -1,6 +1,4 @@
-# plugin-fact-checking
-
-# 🇻🇳 Vietnamese FactCheck Plugin (ViFactCheck / VeriCheck)
+# Vietnamese FactCheck Plugin (ViFactCheck / VeriCheck)
 
 A real-time **fact-checking browser plugin** for Vietnamese language claims, integrating **Natural Language Processing (NLP)** and **Large Language Models (LLMs)**.  
 The plugin helps users verify online claims instantly while browsing, with clear evidence and confidence scoring.
@@ -102,3 +100,7 @@ The system pipeline:
 ```bash
 git clone https://github.com/<your-username>/Vietnamese-FactCheck-Plugin.git
 cd Vietnamese-FactCheck-Plugin
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
