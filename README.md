@@ -94,13 +94,3 @@ The system pipeline:
 
 ---
 
-## 📦 Installation
-
-### 1. Clone repository
-```bash
-git clone https://github.com/<your-username>/Vietnamese-FactCheck-Plugin.git
-cd Vietnamese-FactCheck-Plugin
-
-### 2. Install dependencies
-```bash
-pip install -r requirements.txt
