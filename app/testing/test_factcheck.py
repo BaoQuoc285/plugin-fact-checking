@@ -11,7 +11,7 @@ def fact_checker():
     return FactCheck(
         search_api_key="297e5175d5055b5816ceb37fe503851598633097",
         model_path="C://Users//ADMIN//Desktop//IE403-PluginFactChecking//app//models//weights//model_pho_bert_base.pth",
-        llm_api_params={"provider": "GEMINI", "model_name": "gemini-2.0-flash", "api_key": "AIzaSyCe78RhtA-88OgTPRXDCBCR4gP3XwX6w-Y"},
+        llm_api_params={"provider": "GEMINI", "model_name": "gemini-2.0-flash", "api_key": "None"},
         selector_method=None
     )
 
