@@ -8,12 +8,12 @@ router = APIRouter()
 async def full_fact_check(request: FactCheckRequest):
     # print(request.claim)
     claim = request.claim
-    search_api_key = "297e5175d5055b5816ceb37fe503851598633097"
+    search_api_key = "API"
     model_path = "C://Users//PC//Downloads//app-20250612T075040Z-1-001//app//models//weights//model_pho_bert_base.pth"
     llm_api_key ={
         "provider": "GEMINI",
         "model_name": "gemini-2.0-flash",
-        "api_key": "AIzaSyCe78RhtA-88OgTPRXDCBCR4gP3XwX6w-Y"
+        "api_key": "None"
     }
     selection_method ="bm25"  # Hoặc phương pháp khác nếu cần
     fact_checker = FactCheck(
