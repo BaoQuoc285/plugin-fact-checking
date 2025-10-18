@@ -11,7 +11,7 @@ The plugin helps users verify online claims instantly while browsing, with clear
 Users can type or highlight any Vietnamese claim (e.g., *"Jack bỏ con"*) and receive an instant result — showing whether the claim is **Supported**, **Refuted**, or **Not Enough Information**, along with confidence and evidence links.
 
 <div align="center">
-  <img src="system_overview.png" width="700" alt="System Architecture">
+  <img src="report/system_overview.png" width="700" alt="System Architecture">
 </div>
 
 The system pipeline:
@@ -52,7 +52,7 @@ The system pipeline:
 ## 🖥️ Plugin Interface
 
 <div align="center">
-  <img src="plugin_support.png" width="350" alt="Plugin Interface Screenshot">
+  <img src="report/plugin_support.png" width="350" alt="Plugin Interface Screenshot">
 </div>
 
 **Example:**
