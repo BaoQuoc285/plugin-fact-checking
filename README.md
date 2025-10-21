@@ -62,18 +62,6 @@ The system pipeline:
 > **Verdict:** SUPPORTS (2) | REFUTES (1)  
 > **Action:** Suggests factual rephrasing for user clarity.
 
----
-
-## ⚙️ Technical Details
-
-- **Backend:** Python, FastAPI  
-- **Libraries:** PyTorch, Trafilatura, Sentence-BERT  
-- **Retrieval API:** [Serper.dev](https://serper.dev/)  
-- **LLM Query Optimizer:** Gemini 2.0 Flash  
-- **Models:** PhoBERT-base, XLM-R-Large  
-- **Dataset:** [ViFactCheck (AAAI 2025)](https://arxiv.org/abs/2503.19786)
-
----
 
 ## 🧪 Experimental Results
 
